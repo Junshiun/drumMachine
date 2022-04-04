@@ -1,0 +1,60 @@
+/*#App {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+}*/
+
+#drum-machine {
+    display: inline-flex;
+    height: 100vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+#drum-pad-container {
+    display: grid;
+    grid-template-columns: repeat(3, 50px);
+    grid-template-rows: repeat(3, 50px);
+    align-items: center;
+    box-shadow: 5px 5px 10px grey;
+}
+
+.drum-pad {
+    display: flex;
+    font-size: large;
+    aspect-ratio: 1;
+    justify-content: center;
+    align-items: center;
+    cursor: default;
+}
+
+.drum-pad:hover {
+    background-color: orange;
+}
+
+.key-clicked{
+    background-color: orange;
+}
+
+.key-clicked-after{
+    background-color: none;
+    transition: all 3s;
+}
+
+#display {
+    display: flex;
+    margin-left: 50px;
+    width: 150px;
+    justify-content: center;
+}
+
+.text {
+    opacity: 0;
+    text-decoration: none;
+}
+
+.fadein {
+    opacity: 1;
+    transition: opacity 0.5s;
+}
